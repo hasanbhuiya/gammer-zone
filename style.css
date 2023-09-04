@@ -1,0 +1,76 @@
+/* commoon styles  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.color-priary {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.gamer-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.gamer-logo>h3 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0B0223;
+}
+
+ul {
+    display: flex;
+
+}
+
+ul li {
+    color: #3C354F;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-right: 50px;
+}
+
+.nav-social {
+    width: 262px;
+    height: 56px;
+    padding:10px;
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+}
+
+ul .yt-icon {
+    color: red;
+    margin-left: 5px;
+}
+
+ul .tiktok-icon {
+    color: #000000;
+}
+
+/* mobile responsive  */
+@media screen and (max-width:576px) {
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        padding: 15px 0;
+        text-align: center;
+    }
+}
