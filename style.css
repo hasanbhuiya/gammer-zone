@@ -202,10 +202,10 @@ ul .tiktok-icon {
     height: 70px;
     border-radius: 48px;
     margin-top: 50px;
+    padding:10px;
 }
 .btn-image img {
     width: 90%;
-    padding: 20%;
 }
 
 .btn-primary>p {
@@ -267,14 +267,17 @@ ul .tiktok-icon {
         font-size: 2.8rem;
     }
     .btn-primary{
-        height: 50px;
+        width: 110px;
+        height: 40px;
+        padding: 5%;
     }
     .btn-image img {
         width:30px;
-        margin-right:7px;
+        margin-right:2px;
     }
     .btn-primary>p{
         font-size: .4rem;
+        padding: 0 2px;
     }
 
 }
