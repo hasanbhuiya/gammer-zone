@@ -8,7 +8,7 @@
 }
 
 main {
-    padding: 5% 10%;
+    padding: 5% 8%;
 }
 
 section {
@@ -42,10 +42,12 @@ nav {
     margin: 50px 0;
 }
 
-.banner-logo {
+.gamer-logo {
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .banner-logo>h3 {
@@ -54,12 +56,12 @@ nav {
     color: #0B0223;
 }
 
-ul {
+nav>ul {
     display: flex;
 
 }
 
-ul li {
+nav>ul> li {
     color: #3C354F;
     font-size: 1.2rem;
     font-weight: 500;
@@ -74,20 +76,22 @@ ul li {
     background-color: rgba(11, 2, 35, 0.10);
 }
 
-ul .yt-icon {
+nav>ul .yt-icon {
     color: red;
     margin-left: 5px;
 }
 
-ul .tiktok-icon {
+nav>ul .tiktok-icon {
     color: #000000;
 }
 
 .banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 10%;
+    /* margin: 0 10%; */
+    background-image: url(images/Group\ 14.png);
+    background-repeat: no-repeat;
 }
 
 .banner-info>h1 {
@@ -118,19 +122,22 @@ ul .tiktok-icon {
     display: inline-flex;
     padding: 21px 40px;
     align-items: flex-start;
-    border: 0       ;
+    border: 0;
     gap: 10px;
     border-radius: 48px;
-    background:  #F948B2;
+    background: #F948B2;
     margin-top: 30px;
     margin-right: 20px;
     color: #fff;
 }
-.btn-signin{
+
+.btn-signin {
     background-color: #4EC5F7;
 }
+
 .banner-immage img {
-    width: 100%;
+    width: 95%;
+    padding: 2%;
 }
 
 /* video section  */
@@ -189,21 +196,23 @@ ul .tiktok-icon {
 
 /* button  games  section  */
 .games-button-container {
-   display: grid;
-   grid-template-columns: repeat(5,1fr);
-   gap:10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
+
 .btn-primary {
     display: flex;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
     color: #fff;
     border: 0;
     height: 70px;
     border-radius: 48px;
     margin-top: 50px;
-    padding:10px;
+    padding: 10px;
 }
+
 .btn-image img {
     width: 90%;
 }
@@ -213,18 +222,102 @@ ul .tiktok-icon {
     font-size: 1rem;
     font-weight: 600;
     padding-right: 10%;
-    padding:5%;
+    padding: 5%;
 }
+
+/* footer section  */
+footer {
+    background-color:#0B0223;
+    height: 636px;
+    padding: 50px;
+}
+.footer-head{
+    justify-content: center;
+    color: #000000;
+    padding-top: 120px;
+    padding: 50px;
+}
+.footer-head h3{
+    color: white;
+}
+.list,.social {
+   text-align: center;
+   margin-top: 50px; 
+}
+.list li{
+    display: inline-block;
+    color: #fff;
+    padding: 0 25px; 
+    margin-top: 20px;  
+}
+.list a,.social a{
+    color: #fff;
+}
+
+.social a{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+
+}
+.more-info a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.more-info li{
+    padding-right: 30px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+}
+/* .footer {
+    background-color: #0B0223;
+    height: 9000px;
+
+}
+.footer-head{
+    justify-content: center;
+    color: #000000;
+    padding-top: 120px;
+}
+.footer-head h3{
+    color: white;
+}
+.our-sory-and-more{
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    gap: 50px;
+
+}
+.our-sory-and-more p{
+    color: #fff;
+}
+
+.social-link{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 500px;
+    margin: 100px 0;
+}
+.social-icon{
+    color: #fff;
+    width: 5.5rem;
+    text-align: center;
+    display: inline-block;
+} */
 /* mobile responsive  */
 @media screen and (max-width:576px) {
 
     nav,
-    ul,
+   nav> ul,
     .banner {
         flex-direction: column;
     }
 
-    ul li {
+    nav>ul> li {
         padding: 15px 0;
         text-align: center;
     }
@@ -266,18 +359,24 @@ ul .tiktok-icon {
     .text-position h3 {
         font-size: 2.8rem;
     }
-    .btn-primary{
-        width: 110px;
+
+    .btn-primary {
+        width: 97px;
         height: 40px;
-        padding: 5%;
+        padding: 3%;
     }
+
     .btn-image img {
-        width:30px;
-        margin-right:2px;
+        width: 30px;
+        margin-right: 2px;
     }
-    .btn-primary>p{
+
+    .btn-primary>p {
         font-size: .4rem;
         padding: 0 2px;
     }
-
+    
+    .social-link{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
