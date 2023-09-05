@@ -163,14 +163,13 @@ nav>ul .tiktok-icon {
 
 /* instant play section  */
 .instant-play-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   display: flex;
+   justify-content: center  ;
 }
 
 .instant-play-info {
     margin: auto;
 }
-
 .text-position {
     text-align: right;
     width: 50%;
@@ -182,14 +181,15 @@ nav>ul .tiktok-icon {
     font-weight: 700;
 }
 
-.instant-play-image img {
-    width: 100%;
+.instant-play-image{
+    width: 634.833px;
+    height: 650px;
 }
 
 .my-talking {
     position: relative;
-    bottom: 400px;
-    right: 200px;
+    bottom: 285px;
+    right: 175px;
     width: 400px;
     height: 450px;
 }
@@ -228,13 +228,12 @@ nav>ul .tiktok-icon {
 /* footer section  */
 footer {
     background-color:#0B0223;
-    height: 636px;
-    padding: 50px;
+    height: 700px;
+    padding-top: 100px;
 }
 .footer-head{
     justify-content: center;
     color: #000000;
-    padding-top: 120px;
     padding: 50px;
 }
 .footer-head h3{
@@ -271,6 +270,7 @@ footer {
 .copyright{
     text-align: center;
     margin-top: 20px;
+    padding-bottom: 50px;
 }
 /* .footer {
     background-color: #0B0223;
